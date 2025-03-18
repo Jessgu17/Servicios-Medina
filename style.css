@@ -126,7 +126,7 @@ a:focus {
 .hero{
     height: 400px;
     position: relative;
-    background-image: url(../Img/Imagen1.jpg); 
+    background-image: url(../Imagen1.jpg); 
     background-size: cover;
     background-position: center; 
     overflow: hidden;
@@ -362,7 +362,7 @@ a:focus {
 .hero_nos{
     height: 300px;
     position: relative;
-    background-image: url(../Img/ImgNosotros.jpg); 
+    background-image: url(../ImgNosotros.jpg); 
     background-size: cover;
     background-position: center; 
     overflow: hidden;
@@ -487,7 +487,7 @@ a:focus {
 .hero_serv{
     height: 300px;
     position: relative;
-    background-image: url(../Img/ImgServicios.jpg); 
+    background-image: url(../ImgServicios.jpg); 
     background-size: cover;
     background-position: center; 
     overflow: hidden;
@@ -576,7 +576,7 @@ a:focus {
 .hero_pro{
     height: 300px;
     position: relative;
-    background-image: url(../Img/pro1.jpg); 
+    background-image: url(../pro1.jpg); 
     background-size: cover;
     background-position: center; 
     overflow: hidden;
