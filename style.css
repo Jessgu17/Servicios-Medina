@@ -1,0 +1,902 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #212121;
+    --gris:#bababa;
+    --grisoscuro:#343434;
+    --grisclaro:#f0eeee;
+    --principal: #3a88d2;
+    --secundario: #3f74a7;
+    --terciario: #7daedb;
+    --header: #deedfd;
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    background-color: var(--grisclaro);
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--oscuro);
+}
+
+p{
+    color: var(--grisclaro);
+}
+
+a{
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:focus {
+    outline: none; 
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;  
+    padding: 0 2rem;
+    top: 0;
+}
+
+.nav-bg{
+    background-color: var(--principal);
+    width: 100%;
+    padding: 10px 0%;
+    z-index: 1000;
+    position: fixed;
+    top:0;
+}
+
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.navegacion-principal a{
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem;
+    color:var(--blanco);
+    font-size: medium;
+    font-weight:normal;
+    text-decoration: none;
+}
+
+.navegacion-principal a:hover{
+   color: var(--principal);
+   background-color: var(--blanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.enlaces {
+    display: flex;
+    gap: 1.5rem; 
+    margin-left: 700px;
+}
+
+.lado_izquierdo{
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+.lado_izquierdo h2{
+    color: var(--blanco);
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.lado_izquierdo p{
+    color: var(--blanco);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*TERMINA BARRA DE NAVEGACIÓN*/
+
+/*CONTENEDOR INICIO*/
+.hero{
+    height: 400px;
+    position: relative;
+    background-image: url(../Img/Imagen1.jpg); 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+}
+
+.hero-texto{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+#hero-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#hero-paragraph {
+    font-size: 18px;
+    font-weight:500;
+    line-height: 1.5;
+}
+
+
+
+.contenido-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.hero-texto {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    color: var(--blanco);
+    text-align: justify;
+}
+
+
+
+.buttons-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; 
+}
+
+.circle-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle-button:hover {
+    background-color: var(--principal); 
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%; 
+    background-size: cover;
+    background-position: center;
+    animation: slide-left 2s forwards; 
+}
+
+@keyframes slide-left {
+    0% {
+        left: 100%; 
+    }
+    100% {
+        left: 0; 
+    }
+}
+
+/*TERMINA CONTENEDOR INICIO*/
+
+/*CUERPO INICIO*/
+
+.inicio h2{
+    color: var(--principal);
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(91, 91, 91, 0.5);
+}
+.inicio h3{
+    color: var(--grisoscuro);
+}
+
+.nosotros h2{
+    color: var(--principal);
+    font-size: xx-large;
+}
+
+.nosotros h3{
+    color: var(--grisoscuro);
+}
+
+.nosotros p{
+    color: var(--grisoscuro);
+}
+
+.Inf_nosotros p{
+     color: var(--oscuro);
+}
+
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(112, 112,112, 0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 1rem;
+    
+}
+
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicio .iconos{
+    height: 10rem;
+    width: 15rem;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.conocenos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.conoce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+}
+
+.conoce .imagen_nos{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.imagen_nos img{
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ccc; 
+    
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 1rem;
+    row-gap: 5rem;
+}
+
+.proyectos img{
+    width: 600px; 
+    height: 400px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.proyectos p{
+    font-size: 2.5rem;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.highlight {
+    color:var(--principal); 
+    font-weight: bold; 
+}
+
+/*TERMINA CUERPO INICIO*/
+
+/*PÁGINA NOSOTROS*/
+
+.hero_nos{
+    height: 300px;
+    position: relative;
+    background-image: url(../Img/ImgNosotros.jpg); 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+}
+
+.contenido-hero_nos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero_nos-texto{
+    position: absolute;
+    font-size: 4rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--principal);
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.somos{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 1rem;
+    row-gap: 5rem;
+}
+
+.descripcionIMG {
+    width: 100%;
+    height: 300px; /* Altura fija para las imágenes */
+    overflow: hidden;
+    border-radius: 5%; /* Bordes redondeados */
+}
+
+
+.descripcion{
+    text-align: justify;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.descripcion p{
+    color: var(--grisoscuro);
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura fija para los contenedores */
+    overflow: hidden;
+    border-radius: 5%; /* Bordes redondeados */
+    border: 2px solid var(--gris); /* Borde con color definido */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: var(--grisclaro); /* Fondo para visualización */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala y recorta la imagen para llenar el contenedor */
+    object-position: center; /* Centra la parte visible de la imagen */
+    display: block;
+}
+
+
+
+.image-container h3 {
+    position: absolute;
+    top: 0; /* Posiciona el texto en la parte superior */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centro horizontalmente */
+    color: var(--grisoscuro);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(18, 18, 18, 0.3);
+    margin: 0; /* Elimina márgenes para que quede ajustado */
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+    padding: 1rem; /* Espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para legibilidad */
+    width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+  .text-overlay {
+    position: absolute;
+    bottom: -100%; /* Oculta el texto inicialmente fuera del contenedor */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    transition: bottom 0.5s ease; /* Efecto de deslizamiento */
+  }
+
+  .image-container:hover .text-overlay {
+    bottom: 0; /* Muestra el texto deslizándolo hacia arriba */
+  }
+
+  .Inf_nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Columnas dinámicas */
+    column-gap: 1rem; /* Espaciado entre columnas */
+    row-gap: 1rem; /* Espaciado entre filas */
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: start; /* Alinea elementos desde arriba */
+}
+
+
+/*TERMINA PÁGINA NOSOTROS*/
+
+/*PÁGINA SERVICIOS*/
+.hero_serv{
+    height: 300px;
+    position: relative;
+    background-image: url(../Img/ImgServicios.jpg); 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+}
+.contenido-hero_serv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.hero_serv-texto{
+    position: absolute;
+    font-size: 4rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--principal);
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.serv h1{
+    font-size: 4rem;
+    color: var(--secundario);
+}
+
+.servers{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 1rem; 
+    margin-top: 1rem;
+
+}
+  
+
+.servers p{
+    color: var(--grisoscuro);
+}
+
+  .servi:hover img {
+    transform: scale(1.2); 
+  }
+  
+  .servi p {
+    display: none; 
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .servi.clicked p {
+    display: block; 
+  }
+  
+  .servi {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-width: 100px; /* Asigna un ancho mínimo */
+  }
+  
+  .servi img {
+    width: 128px;
+    height: auto;
+  }
+  
+  .hidden-text {
+    display: none; /* Oculta por defecto */
+    margin-top: 10px;
+    width: 100%; /* Fuerza el ancho completo de su contenedor */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+/*TERMINA PÁGINA SERVICIO*/
+
+/*PÁGINA PROYECTOS*/
+.hero_pro{
+    height: 300px;
+    position: relative;
+    background-image: url(../Img/pro1.jpg); 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
+}
+.contenido-hero_pro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.hero_pro-texto{
+    position: absolute;
+    font-size: 4rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--principal);
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.opciones .boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: .5rem 1rem;
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.opciones .boton:hover {
+    background-color: var(--gris); /* Cambia el color al pasar el ratón */
+}
+
+.opciones p{
+    font-size: .5rem;
+}
+
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-items: center; /* Centra las imágenes en la grilla */
+}
+
+.fotos img {
+    height: 320px;
+    width: 100%; /* Asegura que las imágenes no se desborden */
+    transition: all 0.3s ease; /* Transición para suavizar los cambios */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.fotos div.single img {
+    height: 480px; /* Tamaño más grande para una sola imagen */
+    width: 100%; /* Mantiene la imagen ajustada */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+}
+
+.fotos div.single {
+    grid-column: span 2; /* Hace que una imagen ocupada de manera individual ocupe dos columnas */
+}
+
+
+/*TERMINA PÁGINA PROYECTOS*/
+
+/*PIE DE PÁGINA*/
+
+
+.pie p{
+    font-size: 1rem;
+    color: var(--gris);
+}
+.pie h2{
+    background-color: var(--header);
+    color: var(--secundario);
+}
+
+.pie h3{
+    font-size: 5rem;
+    color: var(--grisoscuro);
+    
+}
+
+.pie{
+    background-color: var(--header);
+}
+
+.datos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 1rem; 
+    margin-top: 1rem;
+}
+
+.dato h3 {
+    margin: 0.5rem 0; 
+    font-weight: normal;
+    font-size: small;
+}
+
+.contenedor_contacto{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.mapa a {
+    display: block; 
+    margin-top: 0.5rem; 
+    text-align: center; 
+    text-decoration: none; 
+    color: var(--principal);
+    font-size: small; 
+}
+
+.mapa a:hover {
+    text-decoration: underline; 
+}
+
+.datos p{
+    color: var(--header);
+}
+
+
+.imagenes-marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    gap: 1rem; 
+    margin-top: 1rem; 
+    justify-items: center; 
+}
+
+.imagenes-marcas img {
+    max-width: 100px;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.marcas h3{
+    font-size: 3rem;
+    background-color: var(--terciario);
+    border-radius: 5%;
+}
+
+/* TERMINA PIE DE PÁGINA*/
+
+/*MEDIA QUERY*/
+@media(max-width:430px ){
+
+    /*INICIO*/
+    .navegacion-principal a{
+        display: block;
+        border-radius: 1rem;
+        padding: 1rem;
+        color:var(--blanco);
+        font-size:small;
+        font-weight:normal;
+        text-decoration: none;
+        
+    }
+    .enlaces{
+        display:flex;
+        gap: .1rem; 
+        margin-left: 20px;
+    }
+    .nav-bg{
+        background-color: var(--principal);
+        width: 100%;
+        padding: 0px 0%;
+        z-index: 1000;
+        position: fixed;
+        top:0;
+    }
+    .lado_izquierdo{
+        margin-left: -200px;
+        padding-left: 0;
+        position: absolute;
+        left: 0;
+        padding: 10px;
+    }
+    .hero{
+        margin-top: 25px;
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 1rem;
+        
+    }
+    .conocenos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        column-gap: 1rem;
+        row-gap: 2rem;
+    }
+    .proyectos img{
+        width: 400px; 
+        height: 400px;
+    }
+    .proyectos p{
+        font-size: 2rem;
+        text-align: justify;
+        margin-top: 1px;
+    }
+    .highlight {
+        color:var(--principal); 
+        font-weight: bold; 
+    }
+    /*TERMINA INICIO*/
+
+    /*NOSOTROS*/
+    .somos{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        column-gap: 1rem;
+        row-gap: 5rem;
+    }
+    .descripcionIMG {
+        width: 100%;
+        height: 200px; /* Altura fija para las imágenes */
+        overflow: hidden;
+        border-radius: 5%; /* Bordes redondeados */
+    }
+    .descripcion{
+        text-align: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .descripcion p{
+        color: var(--grisoscuro);
+        font-size: 2.5rem;
+        margin-bottom: 0px;
+    
+    }
+    /*TERMINA NOSOTROS*/
+
+    /*SERVICIOS*/
+    .servers{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+        gap: 1rem; 
+        margin-top: 1rem;
+    }
+    .hidden-text {
+        display: none; /* Oculta por defecto */
+        margin-top: 10px;
+        width: 110%; /* Fuerza el ancho completo de su contenedor */
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+      }
+    /*TERMINA SERVICIOS*/
+
+    /*PROYECTOS*/
+    .opciones .boton{
+        padding: .5rem .5rem;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Dos columnas de igual tamaño */
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-items: center; /* Centra las imágenes en la grilla */
+    }
+    .fotos img {
+        height: 280px;
+        width: 100%; /* Asegura que las imágenes no se desborden */
+        transition: all 0.3s ease; /* Transición para suavizar los cambios */
+        object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    }
+    .fotos div.single img {
+        height: 300px; /* Tamaño más grande para una sola imagen */
+        width: 100%; /* Mantiene la imagen ajustada */
+        object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+    }
+    .fotos div.single {
+        grid-column: span 2; /* Hace que una imagen ocupada de manera individual ocupe dos columnas */
+    }
+    /*TERMINA PROYECTOS*/
+
+    /*PIE DE PÁGINA*/
+    .contenedor_contacto{
+        display: grid;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    .text-overlay {
+        font-size: 23px;
+      }
+    /*TERMINA PIE DE PÁGINA*/
+}
+
+
+
+
+/*TERMINA MEDIA QUERY*/
+
