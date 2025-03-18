@@ -8,22 +8,22 @@ function changeBackground(imageNumber) {
 
     switch (imageNumber) {
         case 1:
-            hero.style.backgroundImage = "url('Img/Imagen1.jpg')";
+            hero.style.backgroundImage = "url('Imagen1.jpg')";
             heroTitle.textContent = "¿QUIENES SOMOS?";
             heroParagraph.textContent = "Somos una empresa especializada en trabajos de llave en mano, así como relacionados al mantenimiento preventivo y correctivo, a la construcción y mejora de inmuebles. ";
             break;
         case 2:
-            hero.style.backgroundImage = "url('Img/Imagen2.jpg')";
+            hero.style.backgroundImage = "url('Imagen2.jpg')";
             heroTitle.textContent = "NUESTRA MISIÓN";
             heroParagraph.textContent = "Es ofrecer servicios profesionales de mantenimiento, instalación e integración de proyectos para la industria en general, proyectar, suministrar, construir y mantener instalaciones de infraestructura, entendiendo y atendiendo sus necesidades específicas, dar soluciones a nuestros clientes, procurando la mejora continua en todos los ámbitos de nuestros servicios.";
             break;
         case 3:
-            hero.style.backgroundImage = "url('Img/Imagen3.jpg')";
+            hero.style.backgroundImage = "url('Imagen3.jpg')";
             heroTitle.textContent = "OBJETIVOS";
             heroParagraph.textContent = "Compromiso, innovación, servicio y trabajo en equipo son los valores que rigen nuestro desempeño. Para obtener la plena satisfacción de cada cliente, nuestro propósito es, definir en forma integral las necesidades específicas de cada uno y nuestro compromiso es, proporcionarle la mejor solución técnica utilizando productos de la mejor calidad. ";
             break;
         default:
-            hero.style.backgroundImage = "url('Img/Imagen1.jpg')";
+            hero.style.backgroundImage = "url('Imagen1.jpg')";
             heroTitle.textContent = "¿QUIENES SOMOS?";
             heroParagraph.textContent = "Somos una empresa especializada en trabajos de llave en mano, así como relacionados al mantenimiento preventivo y correctivo, a la construcción y mejora de inmuebles. ";
     }
